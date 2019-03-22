@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { sum } from './lib';
 
-import App from './app.js';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+console.log(sum(1, 2));
