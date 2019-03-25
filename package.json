@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "rm -rf index.html && webpack --config ./config/webpack.config.js"
+    "build": "webpack --config ./config/webpack.config.js",
+    "start": "webpack-dev-server --config ./config/webpack.config.js --open"
   },
   "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
   "license": "MIT",
@@ -16,6 +17,7 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   }
 }

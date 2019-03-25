@@ -3,15 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: path.resolve(__dirname, '../src/index.js'),
     output: {
         filename: '[name].[hash].js',
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, '../build'),
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, '../index.html'),
+            filename: path.resolve(__dirname, '../build/index.html'),
             template: path.resolve(__dirname, 'template.html'),
         }),
     ],
@@ -28,14 +28,21 @@ module.exports = {
                         loader: 'url-loader',
                         options: {
                             limit: 8192,
-                            name: '[path][name].[ext]',
+                            outputPath: 'assets',
                         },
                     },
                 ],
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: ['file-loader'],
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'fonts',
+                        },
+                    },
+                ],
             },
         ],
     },
