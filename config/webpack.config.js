@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
+    devtool: 'inline-source-map',
     entry: path.resolve(__dirname, '../src/index.js'),
     output: {
         filename: '[name].[hash].js',
