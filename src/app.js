@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
+import bem from 'bem-classnames-maker';
 
-import './app.css';
+import './app.less';
+
+const cx = bem('app');
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <h1 className="App__title">React App Template</h1>
+            <div className={cx()}>
+                <div className={cx('logo')}>
+                    <img src={require('./images/logo.png')} />
+                </div>
+                <h1 className={cx('title')}>
+                    <span>React App Template</span>
+                </h1>
             </div>
         );
     }
