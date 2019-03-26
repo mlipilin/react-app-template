@@ -2,7 +2,7 @@ import { sum } from './lib';
 
 import './styles/styles.css';
 import logo from './images/logo.png';
-console.log('8888888', logo);
+console.log('88887777777888', logo);
 console.log(sum(1, 2));
 
 let img = new Image();
