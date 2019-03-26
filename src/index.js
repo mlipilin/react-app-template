@@ -1,6 +1,6 @@
 import { sum } from './lib';
 
-import './styles/styles.css';
+import './styles/index.less';
 import logo from './images/logo.png';
 console.log('88887777777888', logo);
 console.log(sum(1, 2));

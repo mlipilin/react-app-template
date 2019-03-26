@@ -15,17 +15,17 @@ h1 {
     color: green;
     display: inline-block;
     position: relative;
+    &:after {
+        background-image: url('../icons/h1.svg');
+        background-repeat: no-repeat;
+        content: '';
+        height: 20px;
+        right: -20px;
+        position: absolute;
+        top: 0;
+        width: 20px;
+    }
 }   
-h1:after {
-    background-image: url('../icons/h1.svg');
-    background-repeat: no-repeat;
-    content: '';
-    height: 20px;
-    right: -20px;
-    position: absolute;
-    top: 0;
-    width: 20px;
-}
 
 img {
     max-width: 100px;
