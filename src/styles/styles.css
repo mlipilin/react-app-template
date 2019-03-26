@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'OpenSans';
-    src:  url('../assets/fonts/OpenSans-Regular.ttf') format('ttf'),
-        url('../assets/fonts/OpenSans-Regular.woff2') format('woff2');
+    src:  url('../fonts/OpenSans-Regular.ttf') format('ttf'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
@@ -17,7 +17,7 @@ h1 {
     position: relative;
 }   
 h1:after {
-    background-image: url('../assets/icons/h1.svg');
+    background-image: url('../icons/h1.svg');
     background-repeat: no-repeat;
     content: '';
     height: 20px;
