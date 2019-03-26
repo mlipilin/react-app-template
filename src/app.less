@@ -1,0 +1,35 @@
+@import './themes/default/index.less';
+
+.app {
+
+}
+
+.app__logo {
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100px;
+    }
+}
+
+.app__title {
+    color: @color-primary;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+
+    span {
+        position: relative;
+
+        &:after {
+            background-image: url('../src/icons/h1.svg');
+            background-repeat: no-repeat;
+            content: '';
+            height: 20px;
+            right: -20px;
+            position: absolute;
+            top: 0;
+            width: 20px;
+        }
+    }
+}
